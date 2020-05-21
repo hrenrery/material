@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hrenr"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-05-21 12:38:47 "/>
+        <attribute name="created" value="aHJlbnI7REVTS1RPUC1CM0dBQTFPOzIwMjAtMDUtMjE7IjA5OjE1OjIwICI7Mjc1Ng=="/>
+        <attribute name="edited" value="aHJlbnI7REVTS1RPUC1CM0dBQTFPOzIwMjAtMDUtMjE7IjEyOjM4OjQ3ICI7MjsyODcz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NOTA1, NOTA2, NOTA3, NOTA4, MEDIA" type="Real" array="False" size=""/>
+            <declare name="NOME" type="String" array="False" size=""/>
+            <output expression="&quot;Qual o nome do Aluno?&quot;" newline="True"/>
+            <input variable="nome"/>
+            <output expression="&quot;Informe a NOTA1&quot;" newline="True"/>
+            <input variable="NOTA1"/>
+            <output expression="&quot;Informe a NOTA2&quot;" newline="True"/>
+            <input variable="NOTA2"/>
+            <output expression="&quot;Informe a NOTA3&quot;" newline="True"/>
+            <input variable="NOTA3"/>
+            <output expression="&quot;Informe a NOTA4&quot;" newline="True"/>
+            <input variable="NOTA4"/>
+            <assign variable="MEDIA" expression="(NOTA1+NOTA2+NOTA3+NOTA4)/4"/>
+            <output expression="&quot;Seu nome e:&quot; &amp; NOME &amp; &quot; e sua media e :&quot; &amp; MEDIA" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="hrenr"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-05-21 11:47:21 "/>
+        <attribute name="created" value="aHJlbnI7REVTS1RPUC1CM0dBQTFPOzIwMjAtMDUtMjE7IjA5OjE1OjIwICI7Mjc1Ng=="/>
+        <attribute name="edited" value="aHJlbnI7REVTS1RPUC1CM0dBQTFPOzIwMjAtMDUtMjE7IjExOjQ3OjIxICI7MzsyODY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="NOTA1, NOTA2, NOTA3, NOTA4, MEDIA, TOTAL" type="Real" array="False" size=""/>
+            <input variable="NOTA1"/>
+            <input variable="NOTA2"/>
+            <input variable="NOTA3"/>
+            <input variable="NOTA4"/>
+            <assign variable="MEDIA" expression="(NOTA1+NOTA2+NOTA3+NOTA4)/4"/>
+            <assign variable="TOTAL" expression="NOTA1+NOTA2+NOTA3+NOTA4"/>
+            <output expression="MEDIA" newline="True"/>
+            <if expression="MEDIA&gt;=7">
+                <then>
+                    <output expression="&quot;Parabens voce foi aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Infelizmente voce foi reprovado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
